@@ -17,7 +17,7 @@ def schrage(N):
     # przeszukiwanie listy i zwracanie najmnieszego indexu elem 
     # z czasu przygotowania rj
     
-    while (len(NN) != 0 or len(NG) != 0): #zgodnie z pesudokodem
+    while (len(NN) != 0 or len(NG) != 0): 
         while (len(NN) != 0 and  NN[rj][0] <= t): 
             j = NN.pop(rj) # remove
             NG.append(j)
@@ -45,7 +45,7 @@ def schrage_pmtn(N):
     l = [r0, p0, q0] # biezace zadanie
     rj = NN.index(min(NN, key=lambda elem: elem[0]))
 
-    while (len(NN) != 0 or len(NG) != 0): # tak jak w podstawowym
+    while (len(NN) != 0 or len(NG) != 0): 
         while (len(NN) != 0 and NN[rj][0] <= t):
             j = NN.pop(rj) # usuniecie najmniejszego czasu przygotowania
             NG.append(j)
